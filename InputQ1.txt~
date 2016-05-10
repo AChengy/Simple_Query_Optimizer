@@ -1,0 +1,5 @@
+Join t1 t2 .20 -> temp1
+Join temp1 t3 .20 -> temp2
+project temp2 temp3
+Aggregate without GroupBy
+GroupBy temp3 with Aggregation
