@@ -1,7 +1,7 @@
 Join t1 t3 .20 -> temp0
-GroupBy temp0 on t1 .rowid with Aggregation -> .20 temp1
+GroupBy temp0 on t1 .rowid with Aggregation -> .15 temp1
 Join t1 temp1 .15 -> temp2
 Join t2 temp2 .10 -> temp3
-GroupBy temp3 .x1 with Aggregation -> .20 temp4
+GroupBy temp3 on None with Aggregation -> .20 temp4
 
 
